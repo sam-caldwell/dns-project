@@ -1,0 +1,31 @@
+zone "acme-anvil-corp.com" {
+    type master;
+    file "/etc/bind/zones/db.acme-anvil-corp.com";
+    allow-transfer {
+        0.0.0.0/24; # This would be bad...we allow zone transfers!
+    };
+};
+
+zone "10.10.in-addr.arpa" {
+    type master;
+    file "/etc/bind/zones/db.10.10";
+    allow-transfer {
+        0.0.0.0/24; # This would be bad...we allow zone transfers!
+    };
+};
+
+zone "db.no-transfers.tld" {
+    type master;
+    file "/etc/bind/zones/db.acme-anvil-corp.com";
+    allow-transfer {
+        0.0.0.0/24; # This would be bad...we allow zone transfers!
+    };
+};
+
+zone "192.168.in-addr.arpa" {
+    type master;
+    file "/etc/bind/zones/db.192.168";
+    allow-transfer {
+        0.0.0.0/24; # This would be bad...we allow zone transfers!
+    };
+};
