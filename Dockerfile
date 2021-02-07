@@ -8,4 +8,3 @@ RUN apt-get update -y && \
     echo 'OPTIONS="-4 -u bind"' > /etc/default/bind9
 
 COPY etc/bind/ /etc/bind/ 
-  

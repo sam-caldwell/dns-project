@@ -14,7 +14,7 @@ zone "10.10.in-addr.arpa" {
     };
 };
 
-zone "db.no-transfers.tld" {
+zone "no-transfers.tld" {
     type master;
     file "/etc/bind/zones/db.acme-anvil-corp.com";
     allow-transfer {

@@ -1,0 +1,12 @@
+$TTL    60
+        @       IN      SOA     acme-anvil-corp.com. admin.acme-anvil-corp.com. (
+        202102061809            ; Serial
+        604800                  ; Refresh
+        86400                   ; Retry
+        2419200                 ; Expire
+        604800 )                ; Negative Cache TTL
+        ;
+        @       IN      NS      localhost.
+        @       IN      A       127.127.127.127
+        @       IN      AAAA    ::1
+        netw215 IN      TXT     "this is an example"
