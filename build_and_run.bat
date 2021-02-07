@@ -1,8 +1,9 @@
-#!/bin/bash
-#
-# This script will build and run the docker container
-# for a bind server.
-#
+REM
+REM build_and_run.bat
+REM
+REM This script will build and run the docker container
+REM for a bind server.
+REM
 docker stop netw215dns &> /dev/null
 docker rm netw215dns &> /dev/null
 docker build --tag netw215:latest . && \
